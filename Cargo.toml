@@ -1,0 +1,10 @@
+[package]
+name = "SigmaOS-metrics-collection"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS metrics-collection component - observability"
+
+[lib]
+name = "metrics_collection"
+path = "src/lib.rs"
