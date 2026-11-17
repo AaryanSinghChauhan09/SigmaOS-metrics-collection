@@ -3,7 +3,7 @@ name = "SigmaOS-metrics-collection"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "metrics-collection component"
+description = "Metrics Collection"
 upstream = []
 
 [contract]
