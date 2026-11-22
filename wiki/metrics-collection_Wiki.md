@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-metrics-collection Component Wiki
+# SigmaOS-metrics-collection Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-metrics-collection provides Metrics Collection for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-metrics-collection provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-metrics-collection Abstraction
-- Fail-Fast on SigmaOS-metrics-collection Initialization Errors
-- Deterministic SigmaOS-metrics-collection Setup
-- Clear Abstraction Over SigmaOS-metrics-collection APIs
-- Composition over Inheritance for SigmaOS-metrics-collection extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-metrics-collection Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-metrics-collection Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-metrics-collection Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-metrics-collection APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-metrics-collection extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-metrics-collection follows a SigmaOS-metrics-collection pattern:
+SigmaOS-metrics-collection follows a SigmaOS-metrics-collection pattern:
 - **SigmaOS-metrics-collection Core**: Provides SigmaOS-metrics-collection support, SigmaOS-metrics-collection management, and SigmaOS-metrics-collection tracking
 - **Management**: Supports SigmaOS-metrics-collection management, SigmaOS-metrics-collection configuration, and SigmaOS-metrics-collection lifecycle
 - **Tracking**: Supports SigmaOS-metrics-collection status, SigmaOS-metrics-collection tracking, and SigmaOS-metrics-collection lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-metrics-collection follows a SigmaOS-metrics-collection pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-metrics-collection by given configuration
--  - Register a SigmaOS-metrics-collection by given name
--  - Get SigmaOS-metrics-collection status and SigmaOS-metrics-collection availability
--  - Track SigmaOS-metrics-collection management and SigmaOS-metrics-collection tracking
+- Manage a SigmaOS-metrics-collection by given configuration
+- Register a SigmaOS-metrics-collection by given name
+- Get SigmaOS-metrics-collection status and SigmaOS-metrics-collection availability
+- Track SigmaOS-metrics-collection management and SigmaOS-metrics-collection tracking
 - Error types for SigmaOS-metrics-collection failure scenarios or unsupported SigmaOS-metrics-collection types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-metrics-collection init, SigmaOS-metrics-collection management)
 3. **Assert**: Verify the expected SigmaOS-metrics-collection results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-metrics-collection initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-metrics-collection failure scenarios
 - Unit tests provided for SigmaOS-metrics-collection management and configuration
